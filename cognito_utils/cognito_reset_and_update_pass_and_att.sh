@@ -38,6 +38,7 @@ read USERNAME
 
 echo "Enter your new cognito password: "
 read PASSWORD
+
 aws cognito-idp admin-set-user-password \
   --user-pool-id $USER_POOL_ID \
   --username $USERNAME \
